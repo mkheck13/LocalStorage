@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Main Content -->
+  <main class="container mt-4">
+    <h1 class="text-center">Local Storage Demo</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label for="storageInput" class="form-label">Enter a Value:</label>
+          <input type="text" class="form-control" id="storageInput" placeholder="Type something...">
+        </div>
+        <div class="d-flex justify-content-between">
+          <button id="addToStorageBtn" class="btn btn-primary">Add to Local Storage</button>
+          <button id="getFromStorageBtn" class="btn btn-secondary">Get from Local Storage</button>
+        </div>
+        <div class="mt-3">
+          <h5>Stored Value:</h5>
+          <p id="storedValue" class="alert alert-info">Nothing yet!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- adding type module will give us access to import and export -->
+  <script type="module" src="./scripts/app.js"></script>
+</body>
+</html>
